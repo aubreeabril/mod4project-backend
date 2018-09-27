@@ -13,8 +13,6 @@ require 'pry'
 app_id = Rails.application.credentials[:api][:id]
 app_key = Rails.application.credentials[:api][:key]
 
-Recipe.destroy_all
-
 def getRecipes(search, app_id, app_key)
   recipesJson = JSON.parse(RestClient.get("https://api.edamam.com/search?q=" + search + "&app_id=" + app_id + "&app_key=" + app_key + "&from=0&to=100"))
   # binding.pry
@@ -23,4 +21,14 @@ def getRecipes(search, app_id, app_key)
   end
 end
 
-getRecipes('chicken', app_id, app_key)
+# getRecipes('chicken', app_id, app_key)
+# getRecipes('pasta', app_id, app_key)
+# getRecipes('cake', app_id, app_key)
+# getRecipes('cheese', app_id, app_key)
+# getRecipes('salmon', app_id, app_key)
+
+getRecipes('vegetarian', app_id, app_key)
+getRecipes('gluten', app_id, app_key)
+getRecipes('bread', app_id, app_key)
+getRecipes('steak', app_id, app_key)
+getRecipes('cookies', app_id, app_key)
