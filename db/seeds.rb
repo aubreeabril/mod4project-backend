@@ -13,6 +13,7 @@ require 'pry'
 app_id = Rails.application.credentials[:api][:id]
 app_key = Rails.application.credentials[:api][:key]
 
+
 def getRecipes(search, app_id, app_key)
   recipesJson = JSON.parse(RestClient.get("https://api.edamam.com/search?q=" + search + "&app_id=" + app_id + "&app_key=" + app_key + "&from=0&to=100"))
   # binding.pry
