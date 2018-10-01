@@ -28,8 +28,10 @@ end
 # getRecipes('cheese', app_id, app_key)
 # getRecipes('salmon', app_id, app_key)
 
-getRecipes('vegetarian', app_id, app_key)
-getRecipes('gluten', app_id, app_key)
-getRecipes('bread', app_id, app_key)
-getRecipes('steak', app_id, app_key)
-getRecipes('cookies', app_id, app_key)
+# getRecipes('vegetarian', app_id, app_key)
+# getRecipes('gluten', app_id, app_key)
+# getRecipes('bread', app_id, app_key)
+# getRecipes('steak', app_id, app_key)
+# getRecipes('cookies', app_id, app_key)
+
+getRecipes('taco', app_id, app_key)
