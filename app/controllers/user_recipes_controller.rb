@@ -22,7 +22,7 @@ class UserRecipesController < ApplicationController
   private
 
   def user_recipe_params
-    params.require(:user_recipe).permit(:user_id, :recipe_id, :note)
+    params.require(:user_recipe).permit(:user_id, :recipe_id, :note, :category)
   end
 
   def find_user_recipe
