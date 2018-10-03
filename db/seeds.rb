@@ -22,10 +22,10 @@ def getRecipes(search, app_id, app_key)
   end
 end
 
-# getRecipes('chicken', app_id, app_key)
-# getRecipes('pasta', app_id, app_key)
-# getRecipes('cake', app_id, app_key)
-# getRecipes('cheese', app_id, app_key)
+getRecipes('chicken', app_id, app_key)
+getRecipes('pasta', app_id, app_key)
+getRecipes('cake', app_id, app_key)
+getRecipes('cheese', app_id, app_key)
 # getRecipes('salmon', app_id, app_key)
 
 # getRecipes('vegetarian', app_id, app_key)
