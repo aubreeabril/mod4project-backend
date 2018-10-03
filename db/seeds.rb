@@ -10,7 +10,6 @@ require 'json'
 require 'rest-client'
 require 'pry'
 
-Recipe.destroy_all
 
 app_id = Rails.application.credentials[:api][:id]
 app_key = Rails.application.credentials[:api][:key]
@@ -24,17 +23,17 @@ def getRecipes(search, app_id, app_key)
   end
 end
 
-getRecipes('taco', app_id, app_key)
-getRecipes('chicken', app_id, app_key)
-getRecipes('pasta', app_id, app_key)
-getRecipes('cake', app_id, app_key)
-getRecipes('cheese', app_id, app_key)
+# getRecipes('taco', app_id, app_key)
+# getRecipes('chicken', app_id, app_key)
+# getRecipes('pasta', app_id, app_key)
+# getRecipes('cake', app_id, app_key)
+# getRecipes('cheese', app_id, app_key)
 
-# getRecipes('salmon', app_id, app_key)
-# getRecipes('vegetarian', app_id, app_key)
-# getRecipes('gluten', app_id, app_key)
-# getRecipes('steak', app_id, app_key)
-# getRecipes('cookies', app_id, app_key)
+getRecipes('salmon', app_id, app_key)
+getRecipes('vegetarian', app_id, app_key)
+getRecipes('gluten', app_id, app_key)
+getRecipes('steak', app_id, app_key)
+getRecipes('cookies', app_id, app_key)
 
 
 
