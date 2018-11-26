@@ -35,6 +35,8 @@ getRecipes('gluten', app_id, app_key)
 getRecipes('steak', app_id, app_key)
 getRecipes('cookies', app_id, app_key)
 
-
+# add soup
+# rice
+# potatos
 
 # getRecipes('bread', app_id, app_key)
